@@ -1,33 +1,41 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateHTML = ({ name, location, github, linkedin }) =>
-  `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+const generateHTML = ({ name, location, hobby, food, github, linkedin }) =>
+    `<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+  </head>
+  <body>
+  <!-- About me -->
   <div class="container">
-    <h1 class="display-4">Hi! My name is ${name}</h1>
-    <p class="lead">I am from ${location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${github}</li>
-      <li class="list-group-item">LinkedIn: ${linkedin}</li>
-    </ul>
-  </div>
-</div>
+    <div class="section">
+      <div class="row">
+        <div class="grid-example col s12 center teal darken-1">
+          <span class="black-text text-darken-2">
+          <h4>Contact Me</h4>
+          <p>Hi! My name is ${name}</p>
+          <p>I am from ${location}.</p>
+          <ul>
+            <li>My Favorite hobby is ${hobby}</li>
+            <li>My Favorite food is ${food}</li>
+            <li>My GitHub username is ${github}</li>
+            <li>LinkedIn: ${linkedin}</li>
+          </ul>
+          </span>
+        </div>
+      </div>
+    </div>
 </body>
 </html>`;
 

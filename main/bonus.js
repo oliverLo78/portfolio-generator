@@ -56,15 +56,23 @@ const generateHTML = ({ name, location, github, linkedin }) =>
   <title>Document</title>
 </head>
 <body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${name}</h1>
-    <p class="lead">I am from ${location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${github}</li>
-      <li class="list-group-item">LinkedIn: ${linkedin}</li>
-    </ul>
+<!-- About me -->
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 center">
+        <h3>
+          <i class="mdi-content-send brown-text"></i>
+        </h3>
+        <h4>Contact Me</h4>
+        <p class="left-align light">Hi! My name is ${name}</p>\
+        <p class="lead">I am from ${location}.</p>
+        <ul>
+          <li>My GitHub username is ${github}</li>
+          <li>LinkedIn: ${linkedin}</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 </body>
