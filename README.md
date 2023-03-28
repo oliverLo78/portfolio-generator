@@ -26,4 +26,10 @@ It might be a good idea to start building out the HTML skeleton in a real HTML f
 
 ---
 
+## 🖼️ Screenshots
+
+![Screenshot 2023-03-28 104433](https://user-images.githubusercontent.com/109435666/228276694-5a31e2a5-3751-4de4-aaf1-96343b4960cb.png)
+
+![Screenshot 2023-03-28 104155](https://user-images.githubusercontent.com/109435666/228276746-4a1043cc-722f-48e4-b89e-c393eb21111a.png)
+
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
